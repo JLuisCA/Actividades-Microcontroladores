@@ -1,0 +1,1683 @@
+
+ACTIVIDAD_V.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000158  00800100  00000b1a  00000bae  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000b1a  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000006  00800258  00800258  00000d06  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00000d06  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000d38  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 000001b0  00000000  00000000  00000d78  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00002194  00000000  00000000  00000f28  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000c70  00000000  00000000  000030bc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00001046  00000000  00000000  00003d2c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  000003dc  00000000  00000000  00004d74  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    000007b9  00000000  00000000  00005150  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    00000e97  00000000  00000000  00005909  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 000001a8  00000000  00000000  000067a0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 73 01 	jmp	0x2e6	; 0x2e6 <__ctors_end>
+   4:	0c 94 90 01 	jmp	0x320	; 0x320 <__bad_interrupt>
+   8:	0c 94 90 01 	jmp	0x320	; 0x320 <__bad_interrupt>
+   c:	0c 94 90 01 	jmp	0x320	; 0x320 <__bad_interrupt>
+  10:	0c 94 90 01 	jmp	0x320	; 0x320 <__bad_interrupt>
+  14:	0c 94 90 01 	jmp	0x320	; 0x320 <__bad_interrupt>
+  18:	0c 94 90 01 	jmp	0x320	; 0x320 <__bad_interrupt>
+  1c:	0c 94 90 01 	jmp	0x320	; 0x320 <__bad_interrupt>
+  20:	0c 94 90 01 	jmp	0x320	; 0x320 <__bad_interrupt>
+  24:	0c 94 90 01 	jmp	0x320	; 0x320 <__bad_interrupt>
+  28:	0c 94 90 01 	jmp	0x320	; 0x320 <__bad_interrupt>
+  2c:	0c 94 d4 03 	jmp	0x7a8	; 0x7a8 <__vector_11>
+  30:	0c 94 90 01 	jmp	0x320	; 0x320 <__bad_interrupt>
+  34:	0c 94 90 01 	jmp	0x320	; 0x320 <__bad_interrupt>
+  38:	0c 94 90 01 	jmp	0x320	; 0x320 <__bad_interrupt>
+  3c:	0c 94 90 01 	jmp	0x320	; 0x320 <__bad_interrupt>
+  40:	0c 94 b7 03 	jmp	0x76e	; 0x76e <__vector_16>
+  44:	0c 94 90 01 	jmp	0x320	; 0x320 <__bad_interrupt>
+  48:	0c 94 52 05 	jmp	0xaa4	; 0xaa4 <__vector_18>
+  4c:	0c 94 90 01 	jmp	0x320	; 0x320 <__bad_interrupt>
+  50:	0c 94 90 01 	jmp	0x320	; 0x320 <__bad_interrupt>
+  54:	0c 94 90 01 	jmp	0x320	; 0x320 <__bad_interrupt>
+  58:	0c 94 90 01 	jmp	0x320	; 0x320 <__bad_interrupt>
+  5c:	0c 94 90 01 	jmp	0x320	; 0x320 <__bad_interrupt>
+  60:	0c 94 90 01 	jmp	0x320	; 0x320 <__bad_interrupt>
+  64:	0c 94 90 01 	jmp	0x320	; 0x320 <__bad_interrupt>
+  68:	8e 04       	cpc	r8, r14
+  6a:	51 05       	cpc	r21, r1
+  6c:	51 05       	cpc	r21, r1
+  6e:	51 05       	cpc	r21, r1
+  70:	51 05       	cpc	r21, r1
+  72:	51 05       	cpc	r21, r1
+  74:	51 05       	cpc	r21, r1
+  76:	51 05       	cpc	r21, r1
+  78:	51 05       	cpc	r21, r1
+  7a:	51 05       	cpc	r21, r1
+  7c:	51 05       	cpc	r21, r1
+  7e:	51 05       	cpc	r21, r1
+  80:	51 05       	cpc	r21, r1
+  82:	51 05       	cpc	r21, r1
+  84:	51 05       	cpc	r21, r1
+  86:	51 05       	cpc	r21, r1
+  88:	51 05       	cpc	r21, r1
+  8a:	f2 04       	cpc	r15, r2
+  8c:	51 05       	cpc	r21, r1
+  8e:	51 05       	cpc	r21, r1
+  90:	51 05       	cpc	r21, r1
+  92:	24 05       	cpc	r18, r4
+  94:	51 05       	cpc	r21, r1
+  96:	51 05       	cpc	r21, r1
+  98:	51 05       	cpc	r21, r1
+  9a:	51 05       	cpc	r21, r1
+  9c:	51 05       	cpc	r21, r1
+  9e:	51 05       	cpc	r21, r1
+  a0:	51 05       	cpc	r21, r1
+  a2:	51 05       	cpc	r21, r1
+  a4:	51 05       	cpc	r21, r1
+  a6:	51 05       	cpc	r21, r1
+  a8:	75 04       	cpc	r7, r5
+  aa:	51 05       	cpc	r21, r1
+  ac:	a7 04       	cpc	r10, r7
+  ae:	51 05       	cpc	r21, r1
+  b0:	51 05       	cpc	r21, r1
+  b2:	51 05       	cpc	r21, r1
+  b4:	51 05       	cpc	r21, r1
+  b6:	51 05       	cpc	r21, r1
+  b8:	51 05       	cpc	r21, r1
+  ba:	51 05       	cpc	r21, r1
+  bc:	51 05       	cpc	r21, r1
+  be:	51 05       	cpc	r21, r1
+  c0:	c0 04       	cpc	r12, r0
+  c2:	d9 04       	cpc	r13, r9
+  c4:	3d 05       	cpc	r19, r13
+  c6:	0b 05       	cpc	r16, r11
+  c8:	51 05       	cpc	r21, r1
+  ca:	43 04       	cpc	r4, r3
+  cc:	51 05       	cpc	r21, r1
+  ce:	51 05       	cpc	r21, r1
+  d0:	51 05       	cpc	r21, r1
+  d2:	5c 04       	cpc	r5, r12
+
+000000d4 <INIT_SSD1306>:
+  d4:	12 00 ae 01 a8 3f 01 20 00 02 21 00 7f 02 22 00     .....?. ..!...".
+  e4:	07 00 40 01 d3 00 00 a1 00 c8 01 da 12 01 81 7f     ..@.............
+  f4:	00 a4 00 a6 01 d5 80 01 d9 c2 01 db 20 01 8d 14     ............ ...
+ 104:	00 af                                               ..
+
+00000106 <FONTS>:
+ 106:	00 00 00 00 00 81 81 18 81 81 00 07 00 07 00 14     ................
+ 116:	7f 14 7f 14 24 2a 7f 2a 12 23 13 08 64 62 36 49     ....$*.*.#..db6I
+ 126:	55 22 50 00 05 03 00 00 00 1c 22 41 00 00 41 22     U"P......."A..A"
+ 136:	1c 00 14 08 3e 08 14 08 08 3e 08 08 00 50 30 00     ....>....>...P0.
+ 146:	00 08 08 08 08 08 00 60 60 00 00 20 10 08 04 02     .......``.. ....
+ 156:	3e 51 49 45 3e 00 42 7f 40 00 42 61 51 49 46 21     >QIE>.B.@.BaQIF!
+ 166:	41 45 4b 31 18 14 12 7f 10 27 45 45 45 39 3c 4a     AEK1.....'EEE9<J
+ 176:	49 49 30 01 71 09 05 03 36 49 49 49 36 06 49 49     II0.q...6III6.II
+ 186:	29 1e 00 36 36 00 00 00 56 36 00 00 08 14 22 41     )..66...V6...."A
+ 196:	00 14 14 14 14 14 00 41 22 14 08 02 01 51 09 06     .......A"....Q..
+ 1a6:	32 49 79 41 3e 7e 11 11 11 7e 7f 49 49 49 36 3e     2IyA>~...~.III6>
+ 1b6:	41 41 41 22 7f 41 41 22 1c 7f 49 49 49 41 7f 09     AAA".AA"..IIIA..
+ 1c6:	09 09 01 3e 41 49 49 7a 7f 08 08 08 7f 00 41 7f     ...>AIIz......A.
+ 1d6:	41 00 20 40 41 3f 01 7f 08 14 22 41 7f 40 40 40     A. @A?...."A.@@@
+ 1e6:	40 7f 02 0c 02 7f 7f 04 08 10 7f 3e 41 41 41 3e     @..........>AAA>
+ 1f6:	7f 09 09 09 06 3e 41 51 21 5e 7f 09 19 29 46 46     .....>AQ!^...)FF
+ 206:	49 49 49 31 01 01 7f 01 01 3f 40 40 40 3f 1f 20     III1.....?@@@?. 
+ 216:	40 20 1f 3f 40 38 40 3f 63 14 08 14 63 07 08 70     @ .?@8@?c...c..p
+ 226:	08 07 61 51 49 45 43 00 7f 41 41 00 02 04 08 10     ..aQIEC..AA.....
+ 236:	20 00 41 41 7f 00 04 02 01 02 04 40 40 40 40 40      .AA.......@@@@@
+ 246:	00 01 02 04 00 20 54 54 54 78 7f 48 44 44 38 38     ..... TTTx.HDD88
+ 256:	44 44 44 20 38 44 44 48 7f 38 54 54 54 18 08 7e     DDD 8DDH.8TTT..~
+ 266:	09 01 02 0c 52 52 52 3e 7f 08 04 04 78 00 44 7d     ....RRR>....x.D}
+ 276:	40 00 20 40 44 3d 00 7f 10 28 44 00 00 41 7f 40     @. @D=...(D..A.@
+ 286:	00 7c 04 18 04 78 7c 08 04 04 78 38 44 44 44 38     .|...x|...x8DDD8
+ 296:	7c 14 14 14 08 08 14 14 14 7c 7c 08 04 04 08 48     |........||....H
+ 2a6:	54 54 54 20 04 3f 44 40 20 3c 40 40 20 7c 1c 20     TTT .?D@ <@@ |. 
+ 2b6:	40 20 1c 3c 40 30 40 3c 44 28 10 28 44 0c 50 50     @ .<@0@<D(.(D.PP
+ 2c6:	50 3c 44 64 54 4c 44 00 08 36 41 00 00 00 7f 00     P<DdTLD..6A.....
+ 2d6:	00 00 41 36 08 00 10 08 08 10 08 00 00 00 00 00     ..A6............
+
+000002e6 <__ctors_end>:
+ 2e6:	11 24       	eor	r1, r1
+ 2e8:	1f be       	out	0x3f, r1	; 63
+ 2ea:	cf ef       	ldi	r28, 0xFF	; 255
+ 2ec:	d8 e0       	ldi	r29, 0x08	; 8
+ 2ee:	de bf       	out	0x3e, r29	; 62
+ 2f0:	cd bf       	out	0x3d, r28	; 61
+
+000002f2 <__do_copy_data>:
+ 2f2:	12 e0       	ldi	r17, 0x02	; 2
+ 2f4:	a0 e0       	ldi	r26, 0x00	; 0
+ 2f6:	b1 e0       	ldi	r27, 0x01	; 1
+ 2f8:	ea e1       	ldi	r30, 0x1A	; 26
+ 2fa:	fb e0       	ldi	r31, 0x0B	; 11
+ 2fc:	02 c0       	rjmp	.+4      	; 0x302 <__do_copy_data+0x10>
+ 2fe:	05 90       	lpm	r0, Z+
+ 300:	0d 92       	st	X+, r0
+ 302:	a8 35       	cpi	r26, 0x58	; 88
+ 304:	b1 07       	cpc	r27, r17
+ 306:	d9 f7       	brne	.-10     	; 0x2fe <__do_copy_data+0xc>
+
+00000308 <__do_clear_bss>:
+ 308:	22 e0       	ldi	r18, 0x02	; 2
+ 30a:	a8 e5       	ldi	r26, 0x58	; 88
+ 30c:	b2 e0       	ldi	r27, 0x02	; 2
+ 30e:	01 c0       	rjmp	.+2      	; 0x312 <.do_clear_bss_start>
+
+00000310 <.do_clear_bss_loop>:
+ 310:	1d 92       	st	X+, r1
+
+00000312 <.do_clear_bss_start>:
+ 312:	ae 35       	cpi	r26, 0x5E	; 94
+ 314:	b2 07       	cpc	r27, r18
+ 316:	e1 f7       	brne	.-8      	; 0x310 <.do_clear_bss_loop>
+ 318:	0e 94 e9 01 	call	0x3d2	; 0x3d2 <main>
+ 31c:	0c 94 8b 05 	jmp	0xb16	; 0xb16 <_exit>
+
+00000320 <__bad_interrupt>:
+ 320:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000324 <TWI_Init>:
+		// return status
+		return TWI_STATUS;
+	}
+	// success
+	return SUCCESS;
+}
+ 324:	82 e0       	ldi	r24, 0x02	; 2
+ 326:	80 93 b8 00 	sts	0x00B8, r24	; 0x8000b8 <__TEXT_REGION_LENGTH__+0x7f80b8>
+ 32a:	e9 eb       	ldi	r30, 0xB9	; 185
+ 32c:	f0 e0       	ldi	r31, 0x00	; 0
+ 32e:	80 81       	ld	r24, Z
+ 330:	90 81       	ld	r25, Z
+ 332:	82 70       	andi	r24, 0x02	; 2
+ 334:	81 60       	ori	r24, 0x01	; 1
+ 336:	89 2b       	or	r24, r25
+ 338:	80 83       	st	Z, r24
+ 33a:	08 95       	ret
+
+0000033c <TWI_MT_Start>:
+ 33c:	e9 eb       	ldi	r30, 0xB9	; 185
+ 33e:	f0 e0       	ldi	r31, 0x00	; 0
+ 340:	80 81       	ld	r24, Z
+ 342:	87 75       	andi	r24, 0x57	; 87
+ 344:	80 83       	st	Z, r24
+ 346:	84 ea       	ldi	r24, 0xA4	; 164
+ 348:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7f80bc>
+ 34c:	80 91 bc 00 	lds	r24, 0x00BC	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7f80bc>
+ 350:	88 23       	and	r24, r24
+ 352:	e4 f7       	brge	.-8      	; 0x34c <TWI_MT_Start+0x10>
+ 354:	80 91 b9 00 	lds	r24, 0x00B9	; 0x8000b9 <__TEXT_REGION_LENGTH__+0x7f80b9>
+ 358:	88 7f       	andi	r24, 0xF8	; 248
+ 35a:	88 30       	cpi	r24, 0x08	; 8
+ 35c:	49 f0       	breq	.+18     	; 0x370 <TWI_MT_Start+0x34>
+ 35e:	80 91 b9 00 	lds	r24, 0x00B9	; 0x8000b9 <__TEXT_REGION_LENGTH__+0x7f80b9>
+ 362:	88 7f       	andi	r24, 0xF8	; 248
+ 364:	80 31       	cpi	r24, 0x10	; 16
+ 366:	31 f0       	breq	.+12     	; 0x374 <TWI_MT_Start+0x38>
+ 368:	80 91 b9 00 	lds	r24, 0x00B9	; 0x8000b9 <__TEXT_REGION_LENGTH__+0x7f80b9>
+ 36c:	88 7f       	andi	r24, 0xF8	; 248
+ 36e:	08 95       	ret
+ 370:	80 e0       	ldi	r24, 0x00	; 0
+ 372:	08 95       	ret
+ 374:	80 e0       	ldi	r24, 0x00	; 0
+ 376:	08 95       	ret
+
+00000378 <TWI_MT_Send_SLAW>:
+ 378:	88 0f       	add	r24, r24
+ 37a:	80 93 bb 00 	sts	0x00BB, r24	; 0x8000bb <__TEXT_REGION_LENGTH__+0x7f80bb>
+ 37e:	84 e8       	ldi	r24, 0x84	; 132
+ 380:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7f80bc>
+ 384:	80 91 bc 00 	lds	r24, 0x00BC	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7f80bc>
+ 388:	88 23       	and	r24, r24
+ 38a:	e4 f7       	brge	.-8      	; 0x384 <TWI_MT_Send_SLAW+0xc>
+ 38c:	80 91 b9 00 	lds	r24, 0x00B9	; 0x8000b9 <__TEXT_REGION_LENGTH__+0x7f80b9>
+ 390:	88 7f       	andi	r24, 0xF8	; 248
+ 392:	88 31       	cpi	r24, 0x18	; 24
+ 394:	21 f0       	breq	.+8      	; 0x39e <TWI_MT_Send_SLAW+0x26>
+ 396:	80 91 b9 00 	lds	r24, 0x00B9	; 0x8000b9 <__TEXT_REGION_LENGTH__+0x7f80b9>
+ 39a:	88 7f       	andi	r24, 0xF8	; 248
+ 39c:	08 95       	ret
+ 39e:	80 e0       	ldi	r24, 0x00	; 0
+ 3a0:	08 95       	ret
+
+000003a2 <TWI_MT_Send_Data>:
+ 3a2:	80 93 bb 00 	sts	0x00BB, r24	; 0x8000bb <__TEXT_REGION_LENGTH__+0x7f80bb>
+ 3a6:	84 e8       	ldi	r24, 0x84	; 132
+ 3a8:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7f80bc>
+ 3ac:	80 91 bc 00 	lds	r24, 0x00BC	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7f80bc>
+ 3b0:	88 23       	and	r24, r24
+ 3b2:	e4 f7       	brge	.-8      	; 0x3ac <TWI_MT_Send_Data+0xa>
+ 3b4:	80 91 b9 00 	lds	r24, 0x00B9	; 0x8000b9 <__TEXT_REGION_LENGTH__+0x7f80b9>
+ 3b8:	88 7f       	andi	r24, 0xF8	; 248
+ 3ba:	88 32       	cpi	r24, 0x28	; 40
+ 3bc:	21 f0       	breq	.+8      	; 0x3c6 <TWI_MT_Send_Data+0x24>
+ 3be:	80 91 b9 00 	lds	r24, 0x00B9	; 0x8000b9 <__TEXT_REGION_LENGTH__+0x7f80b9>
+ 3c2:	88 7f       	andi	r24, 0xF8	; 248
+ 3c4:	08 95       	ret
+ 3c6:	80 e0       	ldi	r24, 0x00	; 0
+ 3c8:	08 95       	ret
+
+000003ca <TWI_Stop>:
+void TWI_Stop (void)
+{
+	// End TWI
+	// -------------------------------------------------------------------------------------
+	// send stop sequence
+	TWI_STOP ();
+ 3ca:	84 e9       	ldi	r24, 0x94	; 148
+ 3cc:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7f80bc>
+ 3d0:	08 95       	ret
+
+000003d2 <main>:
+#include "usart.h"
+#include "timers.h"
+int main(void)
+{
+
+	init_ssd1306();
+ 3d2:	0e 94 7b 03 	call	0x6f6	; 0x6f6 <init_ssd1306>
+	SSD1306_ClearScreen ();
+ 3d6:	0e 94 39 02 	call	0x472	; 0x472 <SSD1306_ClearScreen>
+	int count = 0;
+	for (count = 0; count <= 110; count++)
+ 3da:	c0 e0       	ldi	r28, 0x00	; 0
+ 3dc:	d0 e0       	ldi	r29, 0x00	; 0
+ 3de:	1e c0       	rjmp	.+60     	; 0x41c <__EEPROM_REGION_LENGTH__+0x1c>
+	{
+		SSD1306_SetPosition(28,0);
+ 3e0:	60 e0       	ldi	r22, 0x00	; 0
+ 3e2:	8c e1       	ldi	r24, 0x1C	; 28
+ 3e4:	0e 94 97 02 	call	0x52e	; 0x52e <SSD1306_SetPosition>
+		SSD1306_DrawString ("ACTIVIDAD V", NORMAL);
+ 3e8:	60 e0       	ldi	r22, 0x00	; 0
+ 3ea:	80 e0       	ldi	r24, 0x00	; 0
+ 3ec:	91 e0       	ldi	r25, 0x01	; 1
+ 3ee:	0e 94 64 03 	call	0x6c8	; 0x6c8 <SSD1306_DrawString>
+		SSD1306_SetPosition (count, 15);
+ 3f2:	6f e0       	ldi	r22, 0x0F	; 15
+ 3f4:	8c 2f       	mov	r24, r28
+ 3f6:	0e 94 97 02 	call	0x52e	; 0x52e <SSD1306_SetPosition>
+		SSD1306_DrawString ("-", NORMAL);
+ 3fa:	60 e0       	ldi	r22, 0x00	; 0
+ 3fc:	8c e0       	ldi	r24, 0x0C	; 12
+ 3fe:	91 e0       	ldi	r25, 0x01	; 1
+ 400:	0e 94 64 03 	call	0x6c8	; 0x6c8 <SSD1306_DrawString>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 404:	2f ef       	ldi	r18, 0xFF	; 255
+ 406:	89 ef       	ldi	r24, 0xF9	; 249
+ 408:	90 e0       	ldi	r25, 0x00	; 0
+ 40a:	21 50       	subi	r18, 0x01	; 1
+ 40c:	80 40       	sbci	r24, 0x00	; 0
+ 40e:	90 40       	sbci	r25, 0x00	; 0
+ 410:	e1 f7       	brne	.-8      	; 0x40a <__EEPROM_REGION_LENGTH__+0xa>
+ 412:	00 c0       	rjmp	.+0      	; 0x414 <__EEPROM_REGION_LENGTH__+0x14>
+ 414:	00 00       	nop
+		_delay_ms(20);
+		SSD1306_ClearScreen();
+ 416:	0e 94 39 02 	call	0x472	; 0x472 <SSD1306_ClearScreen>
+{
+
+	init_ssd1306();
+	SSD1306_ClearScreen ();
+	int count = 0;
+	for (count = 0; count <= 110; count++)
+ 41a:	21 96       	adiw	r28, 0x01	; 1
+ 41c:	cf 36       	cpi	r28, 0x6F	; 111
+ 41e:	d1 05       	cpc	r29, r1
+ 420:	fc f2       	brlt	.-66     	; 0x3e0 <main+0xe>
+		SSD1306_SetPosition (count, 15);
+		SSD1306_DrawString ("-", NORMAL);
+		_delay_ms(20);
+		SSD1306_ClearScreen();
+	}
+	init_usart(207);
+ 422:	8f ec       	ldi	r24, 0xCF	; 207
+ 424:	90 e0       	ldi	r25, 0x00	; 0
+ 426:	0e 94 21 04 	call	0x842	; 0x842 <init_usart>
+	pwm_init();
+ 42a:	0e 94 e6 03 	call	0x7cc	; 0x7cc <pwm_init>
+
+	sei();
+ 42e:	78 94       	sei
+	while(1){
+		SSD1306_SetPosition(0,11);
+ 430:	6b e0       	ldi	r22, 0x0B	; 11
+ 432:	80 e0       	ldi	r24, 0x00	; 0
+ 434:	0e 94 97 02 	call	0x52e	; 0x52e <SSD1306_SetPosition>
+		SSD1306_DrawString("Esperando comando <3",NORMAL);
+ 438:	60 e0       	ldi	r22, 0x00	; 0
+ 43a:	8e e0       	ldi	r24, 0x0E	; 14
+ 43c:	91 e0       	ldi	r25, 0x01	; 1
+ 43e:	0e 94 64 03 	call	0x6c8	; 0x6c8 <SSD1306_DrawString>
+ 442:	f6 cf       	rjmp	.-20     	; 0x430 <__EEPROM_REGION_LENGTH__+0x30>
+
+00000444 <SSD1306_Send_StartAndSLAW>:
+  }
+  // TWI STOP
+  TWI_Stop ();
+
+  return SSD1306_SUCCESS;                                         // success
+}
+ 444:	cf 93       	push	r28
+ 446:	c8 2f       	mov	r28, r24
+ 448:	0e 94 9e 01 	call	0x33c	; 0x33c <TWI_MT_Start>
+ 44c:	81 11       	cpse	r24, r1
+ 44e:	03 c0       	rjmp	.+6      	; 0x456 <SSD1306_Send_StartAndSLAW+0x12>
+ 450:	8c 2f       	mov	r24, r28
+ 452:	0e 94 bc 01 	call	0x378	; 0x378 <TWI_MT_Send_SLAW>
+ 456:	cf 91       	pop	r28
+ 458:	08 95       	ret
+
+0000045a <SSD1306_Send_Command>:
+ 45a:	cf 93       	push	r28
+ 45c:	c8 2f       	mov	r28, r24
+ 45e:	80 e8       	ldi	r24, 0x80	; 128
+ 460:	0e 94 d1 01 	call	0x3a2	; 0x3a2 <TWI_MT_Send_Data>
+ 464:	81 11       	cpse	r24, r1
+ 466:	03 c0       	rjmp	.+6      	; 0x46e <SSD1306_Send_Command+0x14>
+ 468:	8c 2f       	mov	r24, r28
+ 46a:	0e 94 d1 01 	call	0x3a2	; 0x3a2 <TWI_MT_Send_Data>
+ 46e:	cf 91       	pop	r28
+ 470:	08 95       	ret
+
+00000472 <SSD1306_ClearScreen>:
+
+uint8_t SSD1306_ClearScreen (void)
+{
+ 472:	cf 93       	push	r28
+ 474:	df 93       	push	r29
+  uint8_t status = INIT_STATUS;                                   // TWI init status 0xFF
+  uint16_t i = 0;                                                 // counter
+
+  // TWI START & SLAW
+  status = SSD1306_Send_StartAndSLAW (SSD1306_ADDR);              // start & SLAW
+ 476:	8c e3       	ldi	r24, 0x3C	; 60
+ 478:	0e 94 22 02 	call	0x444	; 0x444 <SSD1306_Send_StartAndSLAW>
+  if (SSD1306_SUCCESS != status) {                                // check status
+ 47c:	81 11       	cpse	r24, r1
+ 47e:	15 c0       	rjmp	.+42     	; 0x4aa <SSD1306_ClearScreen+0x38>
+    return status;                                                // error
+  }
+  // TWI control byte data stream
+  status = TWI_MT_Send_Data (SSD1306_DATA_STREAM);                // send data 0x40
+ 480:	80 e4       	ldi	r24, 0x40	; 64
+ 482:	0e 94 d1 01 	call	0x3a2	; 0x3a2 <TWI_MT_Send_Data>
+  if (SSD1306_SUCCESS != status) {                                // check status
+ 486:	81 11       	cpse	r24, r1
+ 488:	10 c0       	rjmp	.+32     	; 0x4aa <SSD1306_ClearScreen+0x38>
+ 48a:	c0 e0       	ldi	r28, 0x00	; 0
+ 48c:	d0 e0       	ldi	r29, 0x00	; 0
+ 48e:	06 c0       	rjmp	.+12     	; 0x49c <SSD1306_ClearScreen+0x2a>
+    return status;                                                // error
+  }
+  //  send clear byte to memory lcd
+  while (i < CACHE_SIZE_MEM) {
+    status = TWI_MT_Send_Data (CLEAR_COLOR);                      // send data 0x00
+ 490:	80 e0       	ldi	r24, 0x00	; 0
+ 492:	0e 94 d1 01 	call	0x3a2	; 0x3a2 <TWI_MT_Send_Data>
+    if (SSD1306_SUCCESS != status) {                              // check status
+ 496:	81 11       	cpse	r24, r1
+ 498:	08 c0       	rjmp	.+16     	; 0x4aa <SSD1306_ClearScreen+0x38>
+      return status;                                              // error
+    }
+    i++;                                                          // update counter
+ 49a:	21 96       	adiw	r28, 0x01	; 1
+  status = TWI_MT_Send_Data (SSD1306_DATA_STREAM);                // send data 0x40
+  if (SSD1306_SUCCESS != status) {                                // check status
+    return status;                                                // error
+  }
+  //  send clear byte to memory lcd
+  while (i < CACHE_SIZE_MEM) {
+ 49c:	c1 15       	cp	r28, r1
+ 49e:	84 e0       	ldi	r24, 0x04	; 4
+ 4a0:	d8 07       	cpc	r29, r24
+ 4a2:	b0 f3       	brcs	.-20     	; 0x490 <SSD1306_ClearScreen+0x1e>
+      return status;                                              // error
+    }
+    i++;                                                          // update counter
+  }
+  // TWI STOP
+  TWI_Stop ();
+ 4a4:	0e 94 e5 01 	call	0x3ca	; 0x3ca <TWI_Stop>
+
+  return SSD1306_SUCCESS;                                         // success
+ 4a8:	80 e0       	ldi	r24, 0x00	; 0
+}
+ 4aa:	df 91       	pop	r29
+ 4ac:	cf 91       	pop	r28
+ 4ae:	08 95       	ret
+
+000004b0 <SSD1306_SetWindow>:
+
+uint8_t SSD1306_SetWindow (uint8_t x1, uint8_t x2, uint8_t y1, uint8_t y2)
+{
+ 4b0:	0f 93       	push	r16
+ 4b2:	1f 93       	push	r17
+ 4b4:	cf 93       	push	r28
+ 4b6:	df 93       	push	r29
+ 4b8:	c8 2f       	mov	r28, r24
+ 4ba:	d6 2f       	mov	r29, r22
+ 4bc:	14 2f       	mov	r17, r20
+ 4be:	02 2f       	mov	r16, r18
+  uint8_t status = INIT_STATUS;                                   // TWI init status 0xFF
+
+  // TWI START & SLAW
+  status = SSD1306_Send_StartAndSLAW (SSD1306_ADDR);              // start & SLAW
+ 4c0:	8c e3       	ldi	r24, 0x3C	; 60
+ 4c2:	0e 94 22 02 	call	0x444	; 0x444 <SSD1306_Send_StartAndSLAW>
+  if (SSD1306_SUCCESS != status) {                                // check status
+ 4c6:	81 11       	cpse	r24, r1
+ 4c8:	2d c0       	rjmp	.+90     	; 0x524 <SSD1306_SetWindow+0x74>
+    return status;                                                // error
+  }
+  // COLUMN
+  status = SSD1306_Send_Command (SSD1306_SET_COLUMN_ADDR);        // 0x21
+ 4ca:	81 e2       	ldi	r24, 0x21	; 33
+ 4cc:	0e 94 2d 02 	call	0x45a	; 0x45a <SSD1306_Send_Command>
+  if (SSD1306_SUCCESS != status) {                                // check status
+ 4d0:	81 11       	cpse	r24, r1
+ 4d2:	28 c0       	rjmp	.+80     	; 0x524 <SSD1306_SetWindow+0x74>
+    return status;                                                // error
+  }
+  status = SSD1306_Send_Command (x1);                             // start COLUMN
+ 4d4:	8c 2f       	mov	r24, r28
+ 4d6:	0e 94 2d 02 	call	0x45a	; 0x45a <SSD1306_Send_Command>
+  if (SSD1306_SUCCESS != status) {                                // check status
+ 4da:	81 11       	cpse	r24, r1
+ 4dc:	23 c0       	rjmp	.+70     	; 0x524 <SSD1306_SetWindow+0x74>
+    return status;                                                // error
+  }
+  status = SSD1306_Send_Command (x2);                             // end COLUMN
+ 4de:	8d 2f       	mov	r24, r29
+ 4e0:	0e 94 2d 02 	call	0x45a	; 0x45a <SSD1306_Send_Command>
+  if (SSD1306_SUCCESS != status) {                                // check status
+ 4e4:	81 11       	cpse	r24, r1
+ 4e6:	1e c0       	rjmp	.+60     	; 0x524 <SSD1306_SetWindow+0x74>
+    return status;                                                // error
+  }
+  _indexCol = x1;                                                 // update column index
+ 4e8:	8c 2f       	mov	r24, r28
+ 4ea:	90 e0       	ldi	r25, 0x00	; 0
+ 4ec:	90 93 5b 02 	sts	0x025B, r25	; 0x80025b <_indexCol+0x1>
+ 4f0:	80 93 5a 02 	sts	0x025A, r24	; 0x80025a <_indexCol>
+  // PAGE
+  status = SSD1306_Send_Command (SSD1306_SET_PAGE_ADDR);          // 0x22
+ 4f4:	82 e2       	ldi	r24, 0x22	; 34
+ 4f6:	0e 94 2d 02 	call	0x45a	; 0x45a <SSD1306_Send_Command>
+  if (SSD1306_SUCCESS != status) {                                // check status
+ 4fa:	81 11       	cpse	r24, r1
+ 4fc:	13 c0       	rjmp	.+38     	; 0x524 <SSD1306_SetWindow+0x74>
+    return status;                                                // error
+  }
+  status = SSD1306_Send_Command (y1);                             // start PAGE
+ 4fe:	81 2f       	mov	r24, r17
+ 500:	0e 94 2d 02 	call	0x45a	; 0x45a <SSD1306_Send_Command>
+  if (SSD1306_SUCCESS != status) {                                // check status
+ 504:	81 11       	cpse	r24, r1
+ 506:	0e c0       	rjmp	.+28     	; 0x524 <SSD1306_SetWindow+0x74>
+    return status;                                                // error
+  }
+  status = SSD1306_Send_Command (y2);                             // end PAGE
+ 508:	80 2f       	mov	r24, r16
+ 50a:	0e 94 2d 02 	call	0x45a	; 0x45a <SSD1306_Send_Command>
+  if (SSD1306_SUCCESS != status) {                                // check status
+ 50e:	81 11       	cpse	r24, r1
+ 510:	09 c0       	rjmp	.+18     	; 0x524 <SSD1306_SetWindow+0x74>
+    return status;                                                // error
+  }
+  _indexPage = y1;                                                // update column index
+ 512:	81 2f       	mov	r24, r17
+ 514:	90 e0       	ldi	r25, 0x00	; 0
+ 516:	90 93 59 02 	sts	0x0259, r25	; 0x800259 <__data_end+0x1>
+ 51a:	80 93 58 02 	sts	0x0258, r24	; 0x800258 <__data_end>
+
+  // TWI STOP
+  TWI_Stop ();
+ 51e:	0e 94 e5 01 	call	0x3ca	; 0x3ca <TWI_Stop>
+
+  return SSD1306_SUCCESS;                                         // success
+ 522:	80 e0       	ldi	r24, 0x00	; 0
+}
+ 524:	df 91       	pop	r29
+ 526:	cf 91       	pop	r28
+ 528:	1f 91       	pop	r17
+ 52a:	0f 91       	pop	r16
+ 52c:	08 95       	ret
+
+0000052e <SSD1306_SetPosition>:
+
+uint8_t SSD1306_SetPosition (uint8_t x, uint8_t y)
+{
+ 52e:	46 2f       	mov	r20, r22
+  uint8_t status = INIT_STATUS;                                   // TWI init status 0xFF
+  uint8_t x_end = END_COLUMN_ADDR;
+  uint8_t y_end = END_PAGE_ADDR;
+ 
+  status = SSD1306_SetWindow (x, x_end, y, y_end);                // end COLUMN
+ 530:	27 e0       	ldi	r18, 0x07	; 7
+ 532:	6f e7       	ldi	r22, 0x7F	; 127
+ 534:	0e 94 58 02 	call	0x4b0	; 0x4b0 <SSD1306_SetWindow>
+  if (SSD1306_SUCCESS != status) {                                // check status
+    return status;                                                // error
+  }
+
+  return SSD1306_SUCCESS;                                         // success
+}
+ 538:	08 95       	ret
+
+0000053a <SSD1306_UpdatePosition>:
+
+uint8_t SSD1306_UpdatePosition (uint8_t x, uint8_t p)
+{
+ 53a:	cf 93       	push	r28
+  uint8_t status = INIT_STATUS;                                   // TWI init status 0xFF
+
+  // check position
+  // -------------------------------------------------------------------------------------
+  if (x > END_COLUMN_ADDR) {
+ 53c:	88 23       	and	r24, r24
+ 53e:	d4 f4       	brge	.+52     	; 0x574 <SSD1306_UpdatePosition+0x3a>
+ 540:	c6 2f       	mov	r28, r22
+    // last page not reached
+    // -----------------------------------------------------------------------------------
+    if (p < END_PAGE_ADDR) {
+ 542:	67 30       	cpi	r22, 0x07	; 7
+ 544:	98 f4       	brcc	.+38     	; 0x56c <SSD1306_UpdatePosition+0x32>
+      _indexCol = 0;                                              // update column
+ 546:	10 92 5b 02 	sts	0x025B, r1	; 0x80025b <_indexCol+0x1>
+ 54a:	10 92 5a 02 	sts	0x025A, r1	; 0x80025a <_indexCol>
+      _indexPage = _indexPage + 1;                                // update page
+ 54e:	60 91 58 02 	lds	r22, 0x0258	; 0x800258 <__data_end>
+ 552:	70 91 59 02 	lds	r23, 0x0259	; 0x800259 <__data_end+0x1>
+ 556:	6f 5f       	subi	r22, 0xFF	; 255
+ 558:	7f 4f       	sbci	r23, 0xFF	; 255
+ 55a:	70 93 59 02 	sts	0x0259, r23	; 0x800259 <__data_end+0x1>
+ 55e:	60 93 58 02 	sts	0x0258, r22	; 0x800258 <__data_end>
+      status = SSD1306_SetPosition (_indexCol, _indexPage);       // update position
+ 562:	80 e0       	ldi	r24, 0x00	; 0
+ 564:	0e 94 97 02 	call	0x52e	; 0x52e <SSD1306_SetPosition>
+      if (SSD1306_SUCCESS != status) {                            // check status
+ 568:	81 11       	cpse	r24, r1
+ 56a:	07 c0       	rjmp	.+14     	; 0x57a <SSD1306_UpdatePosition+0x40>
+        return status;                                            // error
+      }
+    }
+    // last page reached
+    // -----------------------------------------------------------------------------------
+    if (p >= END_PAGE_ADDR) {
+ 56c:	c7 30       	cpi	r28, 0x07	; 7
+ 56e:	20 f0       	brcs	.+8      	; 0x578 <SSD1306_UpdatePosition+0x3e>
+      return SSD1306_ERROR;                                       // return out of range
+ 570:	81 e0       	ldi	r24, 0x01	; 1
+ 572:	03 c0       	rjmp	.+6      	; 0x57a <SSD1306_UpdatePosition+0x40>
+    }
+  }
+
+  return SSD1306_SUCCESS;                                         // success
+ 574:	80 e0       	ldi	r24, 0x00	; 0
+ 576:	01 c0       	rjmp	.+2      	; 0x57a <SSD1306_UpdatePosition+0x40>
+ 578:	80 e0       	ldi	r24, 0x00	; 0
+}
+ 57a:	cf 91       	pop	r28
+ 57c:	08 95       	ret
+
+0000057e <SSD1306_DrawChar>:
+ * @param   enum font 
+ *
+ * @return  uint8_t
+ */
+uint8_t SSD1306_DrawChar (char ch, enum E_Font font)
+{
+ 57e:	0f 93       	push	r16
+ 580:	1f 93       	push	r17
+ 582:	cf 93       	push	r28
+ 584:	df 93       	push	r29
+ 586:	c8 2f       	mov	r28, r24
+  uint8_t next_x;
+  uint8_t next_p;
+  uint8_t mask = 0x00;
+
+  //  NORMAL FONT
+  if ((font & 0x0f) == NORMAL) { 
+ 588:	86 2f       	mov	r24, r22
+ 58a:	8f 70       	andi	r24, 0x0F	; 15
+ 58c:	90 e0       	ldi	r25, 0x00	; 0
+ 58e:	00 97       	sbiw	r24, 0x00	; 0
+ 590:	09 f0       	breq	.+2      	; 0x594 <SSD1306_DrawChar+0x16>
+ 592:	3d c0       	rjmp	.+122    	; 0x60e <SSD1306_DrawChar+0x90>
+    if (font & 0xf0) {                                            // underline?
+ 594:	60 7f       	andi	r22, 0xF0	; 240
+ 596:	11 f4       	brne	.+4      	; 0x59c <SSD1306_DrawChar+0x1e>
+  uint8_t byte;
+  uint8_t status = INIT_STATUS;                                   // TWI init status 0xFF
+  uint8_t i = 0;                                                  // counter
+  uint8_t next_x;
+  uint8_t next_p;
+  uint8_t mask = 0x00;
+ 598:	d0 e0       	ldi	r29, 0x00	; 0
+ 59a:	01 c0       	rjmp	.+2      	; 0x59e <SSD1306_DrawChar+0x20>
+
+  //  NORMAL FONT
+  if ((font & 0x0f) == NORMAL) { 
+    if (font & 0xf0) {                                            // underline?
+      mask = 0x80;                                                // set underline mask
+ 59c:	d0 e8       	ldi	r29, 0x80	; 128
+    }
+    next_x = _indexCol + CHARS_COLS_LENGTH;                       // next column
+ 59e:	80 91 5a 02 	lds	r24, 0x025A	; 0x80025a <_indexCol>
+    next_p = _indexPage;                                          // next page
+ 5a2:	60 91 58 02 	lds	r22, 0x0258	; 0x800258 <__data_end>
+    // UPDATE / CHECK TEXT POSITION
+    status = SSD1306_UpdatePosition (next_x, next_p);
+ 5a6:	8b 5f       	subi	r24, 0xFB	; 251
+ 5a8:	0e 94 9d 02 	call	0x53a	; 0x53a <SSD1306_UpdatePosition>
+    if (SSD1306_SUCCESS != status) {                              // check status
+ 5ac:	81 11       	cpse	r24, r1
+ 5ae:	87 c0       	rjmp	.+270    	; 0x6be <SSD1306_DrawChar+0x140>
+      return status;                                              // error
+    }
+    // TWI START & SLAW
+    status = SSD1306_Send_StartAndSLAW (SSD1306_ADDR);            // start & SLAW
+ 5b0:	8c e3       	ldi	r24, 0x3C	; 60
+ 5b2:	0e 94 22 02 	call	0x444	; 0x444 <SSD1306_Send_StartAndSLAW>
+    if (SSD1306_SUCCESS != status) {                              // check status
+ 5b6:	81 11       	cpse	r24, r1
+ 5b8:	82 c0       	rjmp	.+260    	; 0x6be <SSD1306_DrawChar+0x140>
+      return status;                                              // error
+    }
+    // TWI control byte data stream
+    status = TWI_MT_Send_Data (SSD1306_DATA_STREAM);              // send data 0x40
+ 5ba:	80 e4       	ldi	r24, 0x40	; 64
+ 5bc:	0e 94 d1 01 	call	0x3a2	; 0x3a2 <TWI_MT_Send_Data>
+    if (SSD1306_SUCCESS != status) {                              // check status
+ 5c0:	81 11       	cpse	r24, r1
+ 5c2:	7d c0       	rjmp	.+250    	; 0x6be <SSD1306_DrawChar+0x140>
+ 5c4:	20 e0       	ldi	r18, 0x00	; 0
+ 5c6:	20 c0       	rjmp	.+64     	; 0x608 <SSD1306_DrawChar+0x8a>
+      return status;                                              // error
+    }
+
+    while (i < CHARS_COLS_LENGTH) {
+      byte = pgm_read_byte (&FONTS[ch-32][i++]);
+ 5c8:	8c 2f       	mov	r24, r28
+ 5ca:	90 e0       	ldi	r25, 0x00	; 0
+ 5cc:	80 97       	sbiw	r24, 0x20	; 32
+ 5ce:	11 e0       	ldi	r17, 0x01	; 1
+ 5d0:	12 0f       	add	r17, r18
+ 5d2:	fc 01       	movw	r30, r24
+ 5d4:	ee 0f       	add	r30, r30
+ 5d6:	ff 1f       	adc	r31, r31
+ 5d8:	ee 0f       	add	r30, r30
+ 5da:	ff 1f       	adc	r31, r31
+ 5dc:	e8 0f       	add	r30, r24
+ 5de:	f9 1f       	adc	r31, r25
+ 5e0:	e2 0f       	add	r30, r18
+ 5e2:	f1 1d       	adc	r31, r1
+ 5e4:	ea 5f       	subi	r30, 0xFA	; 250
+ 5e6:	fe 4f       	sbci	r31, 0xFE	; 254
+ 5e8:	84 91       	lpm	r24, Z
+      status = TWI_MT_Send_Data (byte | mask);                    // send data col
+ 5ea:	8d 2b       	or	r24, r29
+ 5ec:	0e 94 d1 01 	call	0x3a2	; 0x3a2 <TWI_MT_Send_Data>
+      if (SSD1306_SUCCESS != status) {                            // check status
+ 5f0:	81 11       	cpse	r24, r1
+ 5f2:	65 c0       	rjmp	.+202    	; 0x6be <SSD1306_DrawChar+0x140>
+        return status;                                            // error
+      }
+      _indexCol++;                                                // update global col
+ 5f4:	80 91 5a 02 	lds	r24, 0x025A	; 0x80025a <_indexCol>
+ 5f8:	90 91 5b 02 	lds	r25, 0x025B	; 0x80025b <_indexCol+0x1>
+ 5fc:	01 96       	adiw	r24, 0x01	; 1
+ 5fe:	90 93 5b 02 	sts	0x025B, r25	; 0x80025b <_indexCol+0x1>
+ 602:	80 93 5a 02 	sts	0x025A, r24	; 0x80025a <_indexCol>
+    if (SSD1306_SUCCESS != status) {                              // check status
+      return status;                                              // error
+    }
+
+    while (i < CHARS_COLS_LENGTH) {
+      byte = pgm_read_byte (&FONTS[ch-32][i++]);
+ 606:	21 2f       	mov	r18, r17
+    status = TWI_MT_Send_Data (SSD1306_DATA_STREAM);              // send data 0x40
+    if (SSD1306_SUCCESS != status) {                              // check status
+      return status;                                              // error
+    }
+
+    while (i < CHARS_COLS_LENGTH) {
+ 608:	25 30       	cpi	r18, 0x05	; 5
+ 60a:	f0 f2       	brcs	.-68     	; 0x5c8 <SSD1306_DrawChar+0x4a>
+ 60c:	47 c0       	rjmp	.+142    	; 0x69c <SSD1306_DrawChar+0x11e>
+        return status;                                            // error
+      }
+      _indexCol++;                                                // update global col
+    }
+  //  BOLD FONT
+  } else if ((font & 0x0f) == BOLD) {
+ 60e:	01 97       	sbiw	r24, 0x01	; 1
+ 610:	09 f0       	breq	.+2      	; 0x614 <SSD1306_DrawChar+0x96>
+ 612:	43 c0       	rjmp	.+134    	; 0x69a <SSD1306_DrawChar+0x11c>
+    if (font & 0xf0) {                                            // underline?
+ 614:	60 7f       	andi	r22, 0xF0	; 240
+ 616:	11 f4       	brne	.+4      	; 0x61c <SSD1306_DrawChar+0x9e>
+  uint8_t byte;
+  uint8_t status = INIT_STATUS;                                   // TWI init status 0xFF
+  uint8_t i = 0;                                                  // counter
+  uint8_t next_x;
+  uint8_t next_p;
+  uint8_t mask = 0x00;
+ 618:	d0 e0       	ldi	r29, 0x00	; 0
+ 61a:	01 c0       	rjmp	.+2      	; 0x61e <SSD1306_DrawChar+0xa0>
+      _indexCol++;                                                // update global col
+    }
+  //  BOLD FONT
+  } else if ((font & 0x0f) == BOLD) {
+    if (font & 0xf0) {                                            // underline?
+      mask = 0x80;                                                // set underline mask
+ 61c:	d0 e8       	ldi	r29, 0x80	; 128
+    }
+    next_x = _indexCol + (CHARS_COLS_LENGTH << 1);                // next column
+ 61e:	80 91 5a 02 	lds	r24, 0x025A	; 0x80025a <_indexCol>
+    next_p = _indexPage;                                          // next page
+ 622:	60 91 58 02 	lds	r22, 0x0258	; 0x800258 <__data_end>
+    // UPDATE / CHECK TEXT POSITION
+    status = SSD1306_UpdatePosition (next_x, next_p);
+ 626:	86 5f       	subi	r24, 0xF6	; 246
+ 628:	0e 94 9d 02 	call	0x53a	; 0x53a <SSD1306_UpdatePosition>
+    if (SSD1306_SUCCESS != status) {                              // check status
+ 62c:	81 11       	cpse	r24, r1
+ 62e:	47 c0       	rjmp	.+142    	; 0x6be <SSD1306_DrawChar+0x140>
+      return status;                                              // error
+    }
+    // TWI START & SLAW
+    status = SSD1306_Send_StartAndSLAW (SSD1306_ADDR);            // start & SLAW
+ 630:	8c e3       	ldi	r24, 0x3C	; 60
+ 632:	0e 94 22 02 	call	0x444	; 0x444 <SSD1306_Send_StartAndSLAW>
+    if (SSD1306_SUCCESS != status) {                              // check status
+ 636:	81 11       	cpse	r24, r1
+ 638:	42 c0       	rjmp	.+132    	; 0x6be <SSD1306_DrawChar+0x140>
+      return status;                                              // error
+    }
+    // TWI control byte data stream
+    status = TWI_MT_Send_Data (SSD1306_DATA_STREAM);              // send data 0x40
+ 63a:	80 e4       	ldi	r24, 0x40	; 64
+ 63c:	0e 94 d1 01 	call	0x3a2	; 0x3a2 <TWI_MT_Send_Data>
+    if (SSD1306_SUCCESS != status) {                              // check status
+ 640:	81 11       	cpse	r24, r1
+ 642:	3d c0       	rjmp	.+122    	; 0x6be <SSD1306_DrawChar+0x140>
+ 644:	20 e0       	ldi	r18, 0x00	; 0
+ 646:	26 c0       	rjmp	.+76     	; 0x694 <SSD1306_DrawChar+0x116>
+      return status;                                              // error
+    }
+
+    while (i < CHARS_COLS_LENGTH) {
+      byte = pgm_read_byte (&FONTS[ch-32][i++]);
+ 648:	8c 2f       	mov	r24, r28
+ 64a:	90 e0       	ldi	r25, 0x00	; 0
+ 64c:	80 97       	sbiw	r24, 0x20	; 32
+ 64e:	01 e0       	ldi	r16, 0x01	; 1
+ 650:	02 0f       	add	r16, r18
+ 652:	fc 01       	movw	r30, r24
+ 654:	ee 0f       	add	r30, r30
+ 656:	ff 1f       	adc	r31, r31
+ 658:	ee 0f       	add	r30, r30
+ 65a:	ff 1f       	adc	r31, r31
+ 65c:	e8 0f       	add	r30, r24
+ 65e:	f9 1f       	adc	r31, r25
+ 660:	e2 0f       	add	r30, r18
+ 662:	f1 1d       	adc	r31, r1
+ 664:	ea 5f       	subi	r30, 0xFA	; 250
+ 666:	fe 4f       	sbci	r31, 0xFE	; 254
+ 668:	14 91       	lpm	r17, Z
+      status = TWI_MT_Send_Data (byte | mask);                    // send data 1st col
+ 66a:	1d 2b       	or	r17, r29
+ 66c:	81 2f       	mov	r24, r17
+ 66e:	0e 94 d1 01 	call	0x3a2	; 0x3a2 <TWI_MT_Send_Data>
+      if (SSD1306_SUCCESS != status) {                            // check status
+ 672:	81 11       	cpse	r24, r1
+ 674:	24 c0       	rjmp	.+72     	; 0x6be <SSD1306_DrawChar+0x140>
+        return status;                                            // error
+      }
+      status = TWI_MT_Send_Data (byte | mask);                    // send data 2nd col
+ 676:	81 2f       	mov	r24, r17
+ 678:	0e 94 d1 01 	call	0x3a2	; 0x3a2 <TWI_MT_Send_Data>
+      if (SSD1306_SUCCESS != status) {                            // check status
+ 67c:	81 11       	cpse	r24, r1
+ 67e:	1f c0       	rjmp	.+62     	; 0x6be <SSD1306_DrawChar+0x140>
+        return status;                                            // error
+      }
+      _indexCol = _indexCol + 2;                                  // update global col
+ 680:	80 91 5a 02 	lds	r24, 0x025A	; 0x80025a <_indexCol>
+ 684:	90 91 5b 02 	lds	r25, 0x025B	; 0x80025b <_indexCol+0x1>
+ 688:	02 96       	adiw	r24, 0x02	; 2
+ 68a:	90 93 5b 02 	sts	0x025B, r25	; 0x80025b <_indexCol+0x1>
+ 68e:	80 93 5a 02 	sts	0x025A, r24	; 0x80025a <_indexCol>
+    if (SSD1306_SUCCESS != status) {                              // check status
+      return status;                                              // error
+    }
+
+    while (i < CHARS_COLS_LENGTH) {
+      byte = pgm_read_byte (&FONTS[ch-32][i++]);
+ 692:	20 2f       	mov	r18, r16
+    status = TWI_MT_Send_Data (SSD1306_DATA_STREAM);              // send data 0x40
+    if (SSD1306_SUCCESS != status) {                              // check status
+      return status;                                              // error
+    }
+
+    while (i < CHARS_COLS_LENGTH) {
+ 694:	25 30       	cpi	r18, 0x05	; 5
+ 696:	c0 f2       	brcs	.-80     	; 0x648 <SSD1306_DrawChar+0xca>
+ 698:	01 c0       	rjmp	.+2      	; 0x69c <SSD1306_DrawChar+0x11e>
+  uint8_t byte;
+  uint8_t status = INIT_STATUS;                                   // TWI init status 0xFF
+  uint8_t i = 0;                                                  // counter
+  uint8_t next_x;
+  uint8_t next_p;
+  uint8_t mask = 0x00;
+ 69a:	d0 e0       	ldi	r29, 0x00	; 0
+      }
+      _indexCol = _indexCol + 2;                                  // update global col
+    }
+  } 
+  //  send empty column to memory lcd
+  status = TWI_MT_Send_Data (mask);                               // ONE empty column
+ 69c:	8d 2f       	mov	r24, r29
+ 69e:	0e 94 d1 01 	call	0x3a2	; 0x3a2 <TWI_MT_Send_Data>
+  if (SSD1306_SUCCESS != status) {                                // check status
+ 6a2:	81 11       	cpse	r24, r1
+ 6a4:	0c c0       	rjmp	.+24     	; 0x6be <SSD1306_DrawChar+0x140>
+    return status;                                                // error
+  }
+  _indexCol++;                                                    // update global col
+ 6a6:	80 91 5a 02 	lds	r24, 0x025A	; 0x80025a <_indexCol>
+ 6aa:	90 91 5b 02 	lds	r25, 0x025B	; 0x80025b <_indexCol+0x1>
+ 6ae:	01 96       	adiw	r24, 0x01	; 1
+ 6b0:	90 93 5b 02 	sts	0x025B, r25	; 0x80025b <_indexCol+0x1>
+ 6b4:	80 93 5a 02 	sts	0x025A, r24	; 0x80025a <_indexCol>
+
+  // TWI STOP
+  TWI_Stop ();
+ 6b8:	0e 94 e5 01 	call	0x3ca	; 0x3ca <TWI_Stop>
+  return SSD1306_SUCCESS;                                         // success
+ 6bc:	80 e0       	ldi	r24, 0x00	; 0
+}
+ 6be:	df 91       	pop	r29
+ 6c0:	cf 91       	pop	r28
+ 6c2:	1f 91       	pop	r17
+ 6c4:	0f 91       	pop	r16
+ 6c6:	08 95       	ret
+
+000006c8 <SSD1306_DrawString>:
+
+uint8_t SSD1306_DrawString (char *str, enum E_Font font)
+{
+ 6c8:	0f 93       	push	r16
+ 6ca:	1f 93       	push	r17
+ 6cc:	cf 93       	push	r28
+ 6ce:	df 93       	push	r29
+ 6d0:	8c 01       	movw	r16, r24
+ 6d2:	d6 2f       	mov	r29, r22
+  uint8_t i = 0;                                                  // char counter
+ 6d4:	c0 e0       	ldi	r28, 0x00	; 0
+
+  // send characters of string
+  while (str[i] != '\0') {
+ 6d6:	04 c0       	rjmp	.+8      	; 0x6e0 <SSD1306_DrawString+0x18>
+    SSD1306_DrawChar (str[i++], font);                            // send char
+ 6d8:	cf 5f       	subi	r28, 0xFF	; 255
+ 6da:	6d 2f       	mov	r22, r29
+ 6dc:	0e 94 bf 02 	call	0x57e	; 0x57e <SSD1306_DrawChar>
+uint8_t SSD1306_DrawString (char *str, enum E_Font font)
+{
+  uint8_t i = 0;                                                  // char counter
+
+  // send characters of string
+  while (str[i] != '\0') {
+ 6e0:	f8 01       	movw	r30, r16
+ 6e2:	ec 0f       	add	r30, r28
+ 6e4:	f1 1d       	adc	r31, r1
+ 6e6:	80 81       	ld	r24, Z
+ 6e8:	81 11       	cpse	r24, r1
+ 6ea:	f6 cf       	rjmp	.-20     	; 0x6d8 <SSD1306_DrawString+0x10>
+    SSD1306_DrawChar (str[i++], font);                            // send char
+  }
+  return SSD1306_SUCCESS;                                         // success
+}
+ 6ec:	df 91       	pop	r29
+ 6ee:	cf 91       	pop	r28
+ 6f0:	1f 91       	pop	r17
+ 6f2:	0f 91       	pop	r16
+ 6f4:	08 95       	ret
+
+000006f6 <init_ssd1306>:
+//initialize controller
+uint8_t init_ssd1306(void)
+{
+ 6f6:	df 92       	push	r13
+ 6f8:	ef 92       	push	r14
+ 6fa:	ff 92       	push	r15
+ 6fc:	0f 93       	push	r16
+ 6fe:	1f 93       	push	r17
+ 700:	cf 93       	push	r28
+ 702:	df 93       	push	r29
+	const uint8_t *commands = INIT_SSD1306;                         // variables
+	uint8_t no_of_commands = pgm_read_byte (commands++);            // number of commands
+ 704:	e4 ed       	ldi	r30, 0xD4	; 212
+ 706:	f0 e0       	ldi	r31, 0x00	; 0
+ 708:	d4 90       	lpm	r13, Z
+	uint8_t no_of_arguments;                                        // number od arguments
+	uint8_t command;                                                // command
+	uint8_t status = INIT_STATUS;                                   // TWI init status 0xFF
+	// TWI INIT
+	TWI_Init ();
+ 70a:	0e 94 92 01 	call	0x324	; 0x324 <TWI_Init>
+	// TWI START & SLAW
+	status = SSD1306_Send_StartAndSLAW (SSD1306_ADDR);              // start & SLAW
+ 70e:	8c e3       	ldi	r24, 0x3C	; 60
+ 710:	0e 94 22 02 	call	0x444	; 0x444 <SSD1306_Send_StartAndSLAW>
+	if (SSD1306_SUCCESS != status) {                                // check status
+ 714:	81 11       	cpse	r24, r1
+ 716:	23 c0       	rjmp	.+70     	; 0x75e <init_ssd1306+0x68>
+ 718:	c5 ed       	ldi	r28, 0xD5	; 213
+ 71a:	d0 e0       	ldi	r29, 0x00	; 0
+ 71c:	1b c0       	rjmp	.+54     	; 0x754 <init_ssd1306+0x5e>
+		return status;                                                // error
+	}
+	// SEND COMMAND & ARGUMENTS
+	while (no_of_commands) {                                        // commands loop
+		no_of_arguments = pgm_read_byte (commands++);                 // number of arguments
+ 71e:	fe 01       	movw	r30, r28
+ 720:	14 91       	lpm	r17, Z
+		command = pgm_read_byte (commands++);                         // command
+ 722:	31 96       	adiw	r30, 0x01	; 1
+ 724:	84 91       	lpm	r24, Z
+ 726:	22 96       	adiw	r28, 0x02	; 2
+		// Send commands
+		status = SSD1306_Send_Command (command);                      // send command
+ 728:	0e 94 2d 02 	call	0x45a	; 0x45a <SSD1306_Send_Command>
+		if (SSD1306_SUCCESS != status) {                              // check status
+ 72c:	88 23       	and	r24, r24
+ 72e:	69 f0       	breq	.+26     	; 0x74a <init_ssd1306+0x54>
+ 730:	16 c0       	rjmp	.+44     	; 0x75e <init_ssd1306+0x68>
+			return status;                                              // error
+		}
+		// Send arguments
+		while (no_of_arguments--) {
+			status = SSD1306_Send_Command (pgm_read_byte(commands++));  // send argument
+ 732:	7e 01       	movw	r14, r28
+ 734:	ff ef       	ldi	r31, 0xFF	; 255
+ 736:	ef 1a       	sub	r14, r31
+ 738:	ff 0a       	sbc	r15, r31
+ 73a:	fe 01       	movw	r30, r28
+ 73c:	84 91       	lpm	r24, Z
+ 73e:	0e 94 2d 02 	call	0x45a	; 0x45a <SSD1306_Send_Command>
+		status = SSD1306_Send_Command (command);                      // send command
+		if (SSD1306_SUCCESS != status) {                              // check status
+			return status;                                              // error
+		}
+		// Send arguments
+		while (no_of_arguments--) {
+ 742:	10 2f       	mov	r17, r16
+			status = SSD1306_Send_Command (pgm_read_byte(commands++));  // send argument
+			if (SSD1306_SUCCESS != status) {                            // check status
+ 744:	81 11       	cpse	r24, r1
+ 746:	0b c0       	rjmp	.+22     	; 0x75e <init_ssd1306+0x68>
+		if (SSD1306_SUCCESS != status) {                              // check status
+			return status;                                              // error
+		}
+		// Send arguments
+		while (no_of_arguments--) {
+			status = SSD1306_Send_Command (pgm_read_byte(commands++));  // send argument
+ 748:	e7 01       	movw	r28, r14
+		status = SSD1306_Send_Command (command);                      // send command
+		if (SSD1306_SUCCESS != status) {                              // check status
+			return status;                                              // error
+		}
+		// Send arguments
+		while (no_of_arguments--) {
+ 74a:	0f ef       	ldi	r16, 0xFF	; 255
+ 74c:	01 0f       	add	r16, r17
+ 74e:	11 11       	cpse	r17, r1
+ 750:	f0 cf       	rjmp	.-32     	; 0x732 <init_ssd1306+0x3c>
+			status = SSD1306_Send_Command (pgm_read_byte(commands++));  // send argument
+			if (SSD1306_SUCCESS != status) {                            // check status
+				return status;                                            // error
+			}
+		}
+		no_of_commands--;                                             // next command
+ 752:	da 94       	dec	r13
+	status = SSD1306_Send_StartAndSLAW (SSD1306_ADDR);              // start & SLAW
+	if (SSD1306_SUCCESS != status) {                                // check status
+		return status;                                                // error
+	}
+	// SEND COMMAND & ARGUMENTS
+	while (no_of_commands) {                                        // commands loop
+ 754:	d1 10       	cpse	r13, r1
+ 756:	e3 cf       	rjmp	.-58     	; 0x71e <init_ssd1306+0x28>
+			}
+		}
+		no_of_commands--;                                             // next command
+	}
+	// TWI STOP
+	TWI_Stop ();
+ 758:	0e 94 e5 01 	call	0x3ca	; 0x3ca <TWI_Stop>
+	return SSD1306_SUCCESS;                                         // success
+ 75c:	80 e0       	ldi	r24, 0x00	; 0
+}
+ 75e:	df 91       	pop	r29
+ 760:	cf 91       	pop	r28
+ 762:	1f 91       	pop	r17
+ 764:	0f 91       	pop	r16
+ 766:	ff 90       	pop	r15
+ 768:	ef 90       	pop	r14
+ 76a:	df 90       	pop	r13
+ 76c:	08 95       	ret
+
+0000076e <__vector_16>:
+	TCCR2A |= 1 << COM2A1;
+	//Prescaling fclk/128 (tabla 46 pag.116)
+	//f=16,000,000/128= 125,000
+	//T= 8 us
+	TCCR2A |= (1 << CS22)|(1 << CS20);
+	OCR2A = 10;
+ 76e:	1f 92       	push	r1
+ 770:	0f 92       	push	r0
+ 772:	0f b6       	in	r0, 0x3f	; 63
+ 774:	0f 92       	push	r0
+ 776:	11 24       	eor	r1, r1
+ 778:	8f 93       	push	r24
+ 77a:	9f 93       	push	r25
+ 77c:	80 91 5c 02 	lds	r24, 0x025C	; 0x80025c <tot_overflow>
+ 780:	8f 5f       	subi	r24, 0xFF	; 255
+ 782:	80 93 5c 02 	sts	0x025C, r24	; 0x80025c <tot_overflow>
+ 786:	80 91 5c 02 	lds	r24, 0x025C	; 0x80025c <tot_overflow>
+ 78a:	8d 37       	cpi	r24, 0x7D	; 125
+ 78c:	30 f0       	brcs	.+12     	; 0x79a <__vector_16+0x2c>
+ 78e:	95 b1       	in	r25, 0x05	; 5
+ 790:	80 e2       	ldi	r24, 0x20	; 32
+ 792:	89 27       	eor	r24, r25
+ 794:	85 b9       	out	0x05, r24	; 5
+ 796:	10 92 5c 02 	sts	0x025C, r1	; 0x80025c <tot_overflow>
+ 79a:	9f 91       	pop	r25
+ 79c:	8f 91       	pop	r24
+ 79e:	0f 90       	pop	r0
+ 7a0:	0f be       	out	0x3f, r0	; 63
+ 7a2:	0f 90       	pop	r0
+ 7a4:	1f 90       	pop	r1
+ 7a6:	18 95       	reti
+
+000007a8 <__vector_11>:
+ 7a8:	1f 92       	push	r1
+ 7aa:	0f 92       	push	r0
+ 7ac:	0f b6       	in	r0, 0x3f	; 63
+ 7ae:	0f 92       	push	r0
+ 7b0:	11 24       	eor	r1, r1
+ 7b2:	8f 93       	push	r24
+ 7b4:	9f 93       	push	r25
+ 7b6:	95 b1       	in	r25, 0x05	; 5
+ 7b8:	80 e2       	ldi	r24, 0x20	; 32
+ 7ba:	89 27       	eor	r24, r25
+ 7bc:	85 b9       	out	0x05, r24	; 5
+ 7be:	9f 91       	pop	r25
+ 7c0:	8f 91       	pop	r24
+ 7c2:	0f 90       	pop	r0
+ 7c4:	0f be       	out	0x3f, r0	; 63
+ 7c6:	0f 90       	pop	r0
+ 7c8:	1f 90       	pop	r1
+ 7ca:	18 95       	reti
+
+000007cc <pwm_init>:
+	*/
+}
+// Función para inicializar la PWM
+void pwm_init(void){
+	// Configurar los pines como salida
+	DDRD |= (1 << PIND6) | (1 << PIND5) | (1 << PIND3);
+ 7cc:	8a b1       	in	r24, 0x0a	; 10
+ 7ce:	88 66       	ori	r24, 0x68	; 104
+ 7d0:	8a b9       	out	0x0a, r24	; 10
+    TCCR0A |= (1 << COM0A1) | (1 << COM0B1) | (1 << WGM01) | (1 << WGM00);
+ 7d2:	84 b5       	in	r24, 0x24	; 36
+ 7d4:	83 6a       	ori	r24, 0xA3	; 163
+ 7d6:	84 bd       	out	0x24, r24	; 36
+    TCCR2A |= (1 << COM2B1) | (1 << WGM21) | (1 << WGM20);
+ 7d8:	e0 eb       	ldi	r30, 0xB0	; 176
+ 7da:	f0 e0       	ldi	r31, 0x00	; 0
+ 7dc:	80 81       	ld	r24, Z
+ 7de:	83 62       	ori	r24, 0x23	; 35
+ 7e0:	80 83       	st	Z, r24
+
+    // Configurar prescaler a 64 y arrancar PWM
+    TCCR0B |= (1 << CS01) | (1 << CS00);
+ 7e2:	85 b5       	in	r24, 0x25	; 37
+ 7e4:	83 60       	ori	r24, 0x03	; 3
+ 7e6:	85 bd       	out	0x25, r24	; 37
+    TCCR2B |= (1 << CS22);
+ 7e8:	e1 eb       	ldi	r30, 0xB1	; 177
+ 7ea:	f0 e0       	ldi	r31, 0x00	; 0
+ 7ec:	80 81       	ld	r24, Z
+ 7ee:	84 60       	ori	r24, 0x04	; 4
+ 7f0:	80 83       	st	Z, r24
+ 7f2:	08 95       	ret
+
+000007f4 <set_red_intensity>:
+    
+}
+
+// Función para establecer la intensidad del LED rojo (0-255)
+void set_red_intensity(uint8_t intensity) {
+	OCR0A = intensity;
+ 7f4:	87 bd       	out	0x27, r24	; 39
+ 7f6:	08 95       	ret
+
+000007f8 <set_green_intensity>:
+}
+
+// Función para establecer la intensidad del LED verde (0-255)
+void set_green_intensity(uint8_t intensity) {
+	OCR0B = intensity;
+ 7f8:	88 bd       	out	0x28, r24	; 40
+ 7fa:	08 95       	ret
+
+000007fc <set_blue_intensity>:
+}
+
+// Función para establecer la intensidad del LED azul (0-255)
+void set_blue_intensity(uint8_t intensity) {
+	OCR2B = intensity;
+ 7fc:	80 93 b4 00 	sts	0x00B4, r24	; 0x8000b4 <__TEXT_REGION_LENGTH__+0x7f80b4>
+ 800:	08 95       	ret
+
+00000802 <usart_transmit>:
+  return UDR0;
+}
+
+void usart_transmit( unsigned char data )
+{
+  while (!(UCSR0A & (1 << UDRE0)));  // wait for transmitter buffer empty(UDRE=1)
+ 802:	90 91 c0 00 	lds	r25, 0x00C0	; 0x8000c0 <__TEXT_REGION_LENGTH__+0x7f80c0>
+ 806:	95 ff       	sbrs	r25, 5
+ 808:	fc cf       	rjmp	.-8      	; 0x802 <usart_transmit>
+  UDR0 = data; // when buffer empty, write data to UDR
+ 80a:	80 93 c6 00 	sts	0x00C6, r24	; 0x8000c6 <__TEXT_REGION_LENGTH__+0x7f80c6>
+ 80e:	08 95       	ret
+
+00000810 <usart_transmit_string>:
+}
+
+void usart_transmit_string( char s[] )
+{	
+ 810:	0f 93       	push	r16
+ 812:	1f 93       	push	r17
+ 814:	cf 93       	push	r28
+ 816:	df 93       	push	r29
+ 818:	8c 01       	movw	r16, r24
+	int i = 0;
+ 81a:	c0 e0       	ldi	r28, 0x00	; 0
+ 81c:	d0 e0       	ldi	r29, 0x00	; 0
+  while (i < 64)
+ 81e:	09 c0       	rjmp	.+18     	; 0x832 <usart_transmit_string+0x22>
+  {
+	  if (s[i] == '\0') break;
+ 820:	f8 01       	movw	r30, r16
+ 822:	ec 0f       	add	r30, r28
+ 824:	fd 1f       	adc	r31, r29
+ 826:	80 81       	ld	r24, Z
+ 828:	88 23       	and	r24, r24
+ 82a:	31 f0       	breq	.+12     	; 0x838 <usart_transmit_string+0x28>
+	  usart_transmit(s[i++]);
+ 82c:	21 96       	adiw	r28, 0x01	; 1
+ 82e:	0e 94 01 04 	call	0x802	; 0x802 <usart_transmit>
+}
+
+void usart_transmit_string( char s[] )
+{	
+	int i = 0;
+  while (i < 64)
+ 832:	c0 34       	cpi	r28, 0x40	; 64
+ 834:	d1 05       	cpc	r29, r1
+ 836:	a4 f3       	brlt	.-24     	; 0x820 <usart_transmit_string+0x10>
+  {
+	  if (s[i] == '\0') break;
+	  usart_transmit(s[i++]);
+  }
+}
+ 838:	df 91       	pop	r29
+ 83a:	cf 91       	pop	r28
+ 83c:	1f 91       	pop	r17
+ 83e:	0f 91       	pop	r16
+ 840:	08 95       	ret
+
+00000842 <init_usart>:
+
+void init_usart(unsigned int baudrate)
+{
+	UCSR0C &= (~(1<<UMSEL00) & ~(1<<UMSEL01)); // bit UMSEL = 0 asyncronous mode	
+ 842:	e2 ec       	ldi	r30, 0xC2	; 194
+ 844:	f0 e0       	ldi	r31, 0x00	; 0
+ 846:	20 81       	ld	r18, Z
+ 848:	2f 73       	andi	r18, 0x3F	; 63
+ 84a:	20 83       	st	Z, r18
+	UCSR0A = (1<<U2X0); // bit U2X = 1 double speed
+ 84c:	22 e0       	ldi	r18, 0x02	; 2
+ 84e:	20 93 c0 00 	sts	0x00C0, r18	; 0x8000c0 <__TEXT_REGION_LENGTH__+0x7f80c0>
+	//Baudrate:fosc=16Mhz,U2Xn=1,BaudRate=9600, then UBRR= 207 (DS pag.199)
+	UBRR0H = (unsigned char) (baudrate>>8); // write(MSB)
+ 852:	90 93 c5 00 	sts	0x00C5, r25	; 0x8000c5 <__TEXT_REGION_LENGTH__+0x7f80c5>
+	UBRR0L = (unsigned char) (baudrate);	//write(LSB)
+ 856:	80 93 c4 00 	sts	0x00C4, r24	; 0x8000c4 <__TEXT_REGION_LENGTH__+0x7f80c4>
+	UCSR0C = ((1<<UCSZ00) | (1<<UCSZ01)); //8 bits data lenght
+ 85a:	86 e0       	ldi	r24, 0x06	; 6
+ 85c:	80 83       	st	Z, r24
+	UCSR0B = (1<<RXEN0) | (1<<TXEN0);	//enable transmitter & receiver
+ 85e:	e1 ec       	ldi	r30, 0xC1	; 193
+ 860:	f0 e0       	ldi	r31, 0x00	; 0
+ 862:	88 e1       	ldi	r24, 0x18	; 24
+ 864:	80 83       	st	Z, r24
+	//UCSRC = (1<<USBS);	//2 stop bits
+	UCSR0B |= (1<<RXCIE0);	//enable reception complete (RXCIE0=1) interrupts
+ 866:	80 81       	ld	r24, Z
+ 868:	80 68       	ori	r24, 0x80	; 128
+ 86a:	80 83       	st	Z, r24
+ 86c:	08 95       	ret
+
+0000086e <process_command>:
+}
+
+void process_command(char command) {
+	switch (command) {
+ 86e:	90 e0       	ldi	r25, 0x00	; 0
+ 870:	fc 01       	movw	r30, r24
+ 872:	e1 54       	subi	r30, 0x41	; 65
+ 874:	f1 09       	sbc	r31, r1
+ 876:	e6 33       	cpi	r30, 0x36	; 54
+ 878:	f1 05       	cpc	r31, r1
+ 87a:	08 f0       	brcs	.+2      	; 0x87e <process_command+0x10>
+ 87c:	12 c1       	rjmp	.+548    	; 0xaa2 <__stack+0x1a3>
+ 87e:	ec 5c       	subi	r30, 0xCC	; 204
+ 880:	ff 4f       	sbci	r31, 0xFF	; 255
+ 882:	0c 94 85 05 	jmp	0xb0a	; 0xb0a <__tablejump2__>
+		 case 'r': // Comando para encender el LED rojo
+		 set_red_intensity(0);
+ 886:	80 e0       	ldi	r24, 0x00	; 0
+ 888:	0e 94 fa 03 	call	0x7f4	; 0x7f4 <set_red_intensity>
+		 set_green_intensity(255);
+ 88c:	8f ef       	ldi	r24, 0xFF	; 255
+ 88e:	0e 94 fc 03 	call	0x7f8	; 0x7f8 <set_green_intensity>
+		 set_blue_intensity(255);
+ 892:	8f ef       	ldi	r24, 0xFF	; 255
+ 894:	0e 94 fe 03 	call	0x7fc	; 0x7fc <set_blue_intensity>
+		 usart_transmit_string("Rojo encendido\n");
+ 898:	83 e2       	ldi	r24, 0x23	; 35
+ 89a:	91 e0       	ldi	r25, 0x01	; 1
+ 89c:	0e 94 08 04 	call	0x810	; 0x810 <usart_transmit_string>
+		 SSD1306_SetPosition(0,10);
+ 8a0:	6a e0       	ldi	r22, 0x0A	; 10
+ 8a2:	80 e0       	ldi	r24, 0x00	; 0
+ 8a4:	0e 94 97 02 	call	0x52e	; 0x52e <SSD1306_SetPosition>
+		 SSD1306_ClearScreen();
+ 8a8:	0e 94 39 02 	call	0x472	; 0x472 <SSD1306_ClearScreen>
+		 SSD1306_DrawString("COLOR ROJO",NORMAL);
+ 8ac:	60 e0       	ldi	r22, 0x00	; 0
+ 8ae:	83 e3       	ldi	r24, 0x33	; 51
+ 8b0:	91 e0       	ldi	r25, 0x01	; 1
+ 8b2:	0e 94 64 03 	call	0x6c8	; 0x6c8 <SSD1306_DrawString>
+		 break;
+ 8b6:	08 95       	ret
+		 case 'v': // Comando para encender el LED verde
+		 set_red_intensity(255);
+ 8b8:	8f ef       	ldi	r24, 0xFF	; 255
+ 8ba:	0e 94 fa 03 	call	0x7f4	; 0x7f4 <set_red_intensity>
+		 set_green_intensity(0);
+ 8be:	80 e0       	ldi	r24, 0x00	; 0
+ 8c0:	0e 94 fc 03 	call	0x7f8	; 0x7f8 <set_green_intensity>
+		 set_blue_intensity(255);
+ 8c4:	8f ef       	ldi	r24, 0xFF	; 255
+ 8c6:	0e 94 fe 03 	call	0x7fc	; 0x7fc <set_blue_intensity>
+		 usart_transmit_string("Verde encendido\n");
+ 8ca:	8e e3       	ldi	r24, 0x3E	; 62
+ 8cc:	91 e0       	ldi	r25, 0x01	; 1
+ 8ce:	0e 94 08 04 	call	0x810	; 0x810 <usart_transmit_string>
+		  SSD1306_SetPosition(0,10);
+ 8d2:	6a e0       	ldi	r22, 0x0A	; 10
+ 8d4:	80 e0       	ldi	r24, 0x00	; 0
+ 8d6:	0e 94 97 02 	call	0x52e	; 0x52e <SSD1306_SetPosition>
+		  SSD1306_ClearScreen();
+ 8da:	0e 94 39 02 	call	0x472	; 0x472 <SSD1306_ClearScreen>
+		  SSD1306_DrawString("COLOR VERDE",NORMAL);
+ 8de:	60 e0       	ldi	r22, 0x00	; 0
+ 8e0:	8f e4       	ldi	r24, 0x4F	; 79
+ 8e2:	91 e0       	ldi	r25, 0x01	; 1
+ 8e4:	0e 94 64 03 	call	0x6c8	; 0x6c8 <SSD1306_DrawString>
+		 break;
+ 8e8:	08 95       	ret
+		 case 'a': // Comando para encender el LED azul
+		 set_red_intensity(255);
+ 8ea:	8f ef       	ldi	r24, 0xFF	; 255
+ 8ec:	0e 94 fa 03 	call	0x7f4	; 0x7f4 <set_red_intensity>
+		 set_green_intensity(255);
+ 8f0:	8f ef       	ldi	r24, 0xFF	; 255
+ 8f2:	0e 94 fc 03 	call	0x7f8	; 0x7f8 <set_green_intensity>
+		 set_blue_intensity(0);
+ 8f6:	80 e0       	ldi	r24, 0x00	; 0
+ 8f8:	0e 94 fe 03 	call	0x7fc	; 0x7fc <set_blue_intensity>
+		 usart_transmit_string("Azul encendido\n");
+ 8fc:	8b e5       	ldi	r24, 0x5B	; 91
+ 8fe:	91 e0       	ldi	r25, 0x01	; 1
+ 900:	0e 94 08 04 	call	0x810	; 0x810 <usart_transmit_string>
+		  SSD1306_SetPosition(0,10);
+ 904:	6a e0       	ldi	r22, 0x0A	; 10
+ 906:	80 e0       	ldi	r24, 0x00	; 0
+ 908:	0e 94 97 02 	call	0x52e	; 0x52e <SSD1306_SetPosition>
+		  SSD1306_ClearScreen();
+ 90c:	0e 94 39 02 	call	0x472	; 0x472 <SSD1306_ClearScreen>
+		  SSD1306_DrawString("COLOR AZUL",NORMAL);
+ 910:	60 e0       	ldi	r22, 0x00	; 0
+ 912:	8b e6       	ldi	r24, 0x6B	; 107
+ 914:	91 e0       	ldi	r25, 0x01	; 1
+ 916:	0e 94 64 03 	call	0x6c8	; 0x6c8 <SSD1306_DrawString>
+		 break;
+ 91a:	08 95       	ret
+		  case 'A': // Comando para encender el LED amarrillo
+		 set_red_intensity(0);
+ 91c:	80 e0       	ldi	r24, 0x00	; 0
+ 91e:	0e 94 fa 03 	call	0x7f4	; 0x7f4 <set_red_intensity>
+		 set_green_intensity(0);
+ 922:	80 e0       	ldi	r24, 0x00	; 0
+ 924:	0e 94 fc 03 	call	0x7f8	; 0x7f8 <set_green_intensity>
+		 set_blue_intensity(255);
+ 928:	8f ef       	ldi	r24, 0xFF	; 255
+ 92a:	0e 94 fe 03 	call	0x7fc	; 0x7fc <set_blue_intensity>
+		 usart_transmit_string("Amarrillo encendido\n");
+ 92e:	86 e7       	ldi	r24, 0x76	; 118
+ 930:	91 e0       	ldi	r25, 0x01	; 1
+ 932:	0e 94 08 04 	call	0x810	; 0x810 <usart_transmit_string>
+		 SSD1306_SetPosition(0,10);
+ 936:	6a e0       	ldi	r22, 0x0A	; 10
+ 938:	80 e0       	ldi	r24, 0x00	; 0
+ 93a:	0e 94 97 02 	call	0x52e	; 0x52e <SSD1306_SetPosition>
+		 SSD1306_ClearScreen();
+ 93e:	0e 94 39 02 	call	0x472	; 0x472 <SSD1306_ClearScreen>
+		 SSD1306_DrawString("COLOR AMARILLO",NORMAL);
+ 942:	60 e0       	ldi	r22, 0x00	; 0
+ 944:	8b e8       	ldi	r24, 0x8B	; 139
+ 946:	91 e0       	ldi	r25, 0x01	; 1
+ 948:	0e 94 64 03 	call	0x6c8	; 0x6c8 <SSD1306_DrawString>
+		 break;
+ 94c:	08 95       	ret
+		 case 'c': // Comando para encender el LED cyan
+		 set_red_intensity(255);
+ 94e:	8f ef       	ldi	r24, 0xFF	; 255
+ 950:	0e 94 fa 03 	call	0x7f4	; 0x7f4 <set_red_intensity>
+		 set_green_intensity(0);
+ 954:	80 e0       	ldi	r24, 0x00	; 0
+ 956:	0e 94 fc 03 	call	0x7f8	; 0x7f8 <set_green_intensity>
+		 set_blue_intensity(0);
+ 95a:	80 e0       	ldi	r24, 0x00	; 0
+ 95c:	0e 94 fe 03 	call	0x7fc	; 0x7fc <set_blue_intensity>
+		 usart_transmit_string("Cyan encendido\n");
+ 960:	8a e9       	ldi	r24, 0x9A	; 154
+ 962:	91 e0       	ldi	r25, 0x01	; 1
+ 964:	0e 94 08 04 	call	0x810	; 0x810 <usart_transmit_string>
+		 SSD1306_SetPosition(0,10);
+ 968:	6a e0       	ldi	r22, 0x0A	; 10
+ 96a:	80 e0       	ldi	r24, 0x00	; 0
+ 96c:	0e 94 97 02 	call	0x52e	; 0x52e <SSD1306_SetPosition>
+		 SSD1306_ClearScreen();
+ 970:	0e 94 39 02 	call	0x472	; 0x472 <SSD1306_ClearScreen>
+		 SSD1306_DrawString("COLOR CYAN",NORMAL);
+ 974:	60 e0       	ldi	r22, 0x00	; 0
+ 976:	8a ea       	ldi	r24, 0xAA	; 170
+ 978:	91 e0       	ldi	r25, 0x01	; 1
+ 97a:	0e 94 64 03 	call	0x6c8	; 0x6c8 <SSD1306_DrawString>
+		 break;
+ 97e:	08 95       	ret
+		 case 'm': // Comando para encender el LED magenta
+		 set_red_intensity(0);
+ 980:	80 e0       	ldi	r24, 0x00	; 0
+ 982:	0e 94 fa 03 	call	0x7f4	; 0x7f4 <set_red_intensity>
+		 set_green_intensity(255);
+ 986:	8f ef       	ldi	r24, 0xFF	; 255
+ 988:	0e 94 fc 03 	call	0x7f8	; 0x7f8 <set_green_intensity>
+		 set_blue_intensity(0);
+ 98c:	80 e0       	ldi	r24, 0x00	; 0
+ 98e:	0e 94 fe 03 	call	0x7fc	; 0x7fc <set_blue_intensity>
+		 usart_transmit_string("Magenta encendido\n");
+ 992:	85 eb       	ldi	r24, 0xB5	; 181
+ 994:	91 e0       	ldi	r25, 0x01	; 1
+ 996:	0e 94 08 04 	call	0x810	; 0x810 <usart_transmit_string>
+		 SSD1306_SetPosition(0,10);
+ 99a:	6a e0       	ldi	r22, 0x0A	; 10
+ 99c:	80 e0       	ldi	r24, 0x00	; 0
+ 99e:	0e 94 97 02 	call	0x52e	; 0x52e <SSD1306_SetPosition>
+		 SSD1306_ClearScreen();
+ 9a2:	0e 94 39 02 	call	0x472	; 0x472 <SSD1306_ClearScreen>
+		 SSD1306_DrawString("COLOR MAGENTA",NORMAL);
+ 9a6:	60 e0       	ldi	r22, 0x00	; 0
+ 9a8:	88 ec       	ldi	r24, 0xC8	; 200
+ 9aa:	91 e0       	ldi	r25, 0x01	; 1
+ 9ac:	0e 94 64 03 	call	0x6c8	; 0x6c8 <SSD1306_DrawString>
+		 break;
+ 9b0:	08 95       	ret
+		 case 'n': // Comando para encender el LED naranja
+		 set_red_intensity(0);
+ 9b2:	80 e0       	ldi	r24, 0x00	; 0
+ 9b4:	0e 94 fa 03 	call	0x7f4	; 0x7f4 <set_red_intensity>
+		 set_green_intensity(180);
+ 9b8:	84 eb       	ldi	r24, 0xB4	; 180
+ 9ba:	0e 94 fc 03 	call	0x7f8	; 0x7f8 <set_green_intensity>
+		 set_blue_intensity(255);
+ 9be:	8f ef       	ldi	r24, 0xFF	; 255
+ 9c0:	0e 94 fe 03 	call	0x7fc	; 0x7fc <set_blue_intensity>
+		 usart_transmit_string("Naranja encendido\n");
+ 9c4:	86 ed       	ldi	r24, 0xD6	; 214
+ 9c6:	91 e0       	ldi	r25, 0x01	; 1
+ 9c8:	0e 94 08 04 	call	0x810	; 0x810 <usart_transmit_string>
+		 SSD1306_SetPosition(0,10);
+ 9cc:	6a e0       	ldi	r22, 0x0A	; 10
+ 9ce:	80 e0       	ldi	r24, 0x00	; 0
+ 9d0:	0e 94 97 02 	call	0x52e	; 0x52e <SSD1306_SetPosition>
+		 SSD1306_ClearScreen();
+ 9d4:	0e 94 39 02 	call	0x472	; 0x472 <SSD1306_ClearScreen>
+		 SSD1306_DrawString("COLOR NARANJA",NORMAL);
+ 9d8:	60 e0       	ldi	r22, 0x00	; 0
+ 9da:	89 ee       	ldi	r24, 0xE9	; 233
+ 9dc:	91 e0       	ldi	r25, 0x01	; 1
+ 9de:	0e 94 64 03 	call	0x6c8	; 0x6c8 <SSD1306_DrawString>
+		 break;
+ 9e2:	08 95       	ret
+		 case 'R': // Comando para encender el LED rosa
+		 set_red_intensity(0);
+ 9e4:	80 e0       	ldi	r24, 0x00	; 0
+ 9e6:	0e 94 fa 03 	call	0x7f4	; 0x7f4 <set_red_intensity>
+		 set_green_intensity(235);
+ 9ea:	8b ee       	ldi	r24, 0xEB	; 235
+ 9ec:	0e 94 fc 03 	call	0x7f8	; 0x7f8 <set_green_intensity>
+		 set_blue_intensity(108);
+ 9f0:	8c e6       	ldi	r24, 0x6C	; 108
+ 9f2:	0e 94 fe 03 	call	0x7fc	; 0x7fc <set_blue_intensity>
+		 usart_transmit_string("Rosa encendido\n");
+ 9f6:	87 ef       	ldi	r24, 0xF7	; 247
+ 9f8:	91 e0       	ldi	r25, 0x01	; 1
+ 9fa:	0e 94 08 04 	call	0x810	; 0x810 <usart_transmit_string>
+		 SSD1306_SetPosition(0,10);
+ 9fe:	6a e0       	ldi	r22, 0x0A	; 10
+ a00:	80 e0       	ldi	r24, 0x00	; 0
+ a02:	0e 94 97 02 	call	0x52e	; 0x52e <SSD1306_SetPosition>
+		 SSD1306_ClearScreen();
+ a06:	0e 94 39 02 	call	0x472	; 0x472 <SSD1306_ClearScreen>
+		 SSD1306_DrawString("COLOR ROSA",NORMAL);
+ a0a:	60 e0       	ldi	r22, 0x00	; 0
+ a0c:	87 e0       	ldi	r24, 0x07	; 7
+ a0e:	92 e0       	ldi	r25, 0x02	; 2
+ a10:	0e 94 64 03 	call	0x6c8	; 0x6c8 <SSD1306_DrawString>
+		 break;
+ a14:	08 95       	ret
+		 case 'p': // Comando para encender el LED purpura
+		 set_red_intensity(117);
+ a16:	85 e7       	ldi	r24, 0x75	; 117
+ a18:	0e 94 fa 03 	call	0x7f4	; 0x7f4 <set_red_intensity>
+		 set_green_intensity(212);
+ a1c:	84 ed       	ldi	r24, 0xD4	; 212
+ a1e:	0e 94 fc 03 	call	0x7f8	; 0x7f8 <set_green_intensity>
+		 set_blue_intensity(29);
+ a22:	8d e1       	ldi	r24, 0x1D	; 29
+ a24:	0e 94 fe 03 	call	0x7fc	; 0x7fc <set_blue_intensity>
+		 usart_transmit_string("Purpura encendido\n");
+ a28:	82 e1       	ldi	r24, 0x12	; 18
+ a2a:	92 e0       	ldi	r25, 0x02	; 2
+ a2c:	0e 94 08 04 	call	0x810	; 0x810 <usart_transmit_string>
+		 SSD1306_SetPosition(0,10);
+ a30:	6a e0       	ldi	r22, 0x0A	; 10
+ a32:	80 e0       	ldi	r24, 0x00	; 0
+ a34:	0e 94 97 02 	call	0x52e	; 0x52e <SSD1306_SetPosition>
+		 SSD1306_ClearScreen();
+ a38:	0e 94 39 02 	call	0x472	; 0x472 <SSD1306_ClearScreen>
+		 SSD1306_DrawString("COLOR PURPURA",NORMAL);
+ a3c:	60 e0       	ldi	r22, 0x00	; 0
+ a3e:	85 e2       	ldi	r24, 0x25	; 37
+ a40:	92 e0       	ldi	r25, 0x02	; 2
+ a42:	0e 94 64 03 	call	0x6c8	; 0x6c8 <SSD1306_DrawString>
+		 break;
+ a46:	08 95       	ret
+		  case 'V': // Comando para encender el LED 
+		  set_red_intensity(103);
+ a48:	87 e6       	ldi	r24, 0x67	; 103
+ a4a:	0e 94 fa 03 	call	0x7f4	; 0x7f4 <set_red_intensity>
+		  set_green_intensity(4);
+ a4e:	84 e0       	ldi	r24, 0x04	; 4
+ a50:	0e 94 fc 03 	call	0x7f8	; 0x7f8 <set_green_intensity>
+		  set_blue_intensity(103);
+ a54:	87 e6       	ldi	r24, 0x67	; 103
+ a56:	0e 94 fe 03 	call	0x7fc	; 0x7fc <set_blue_intensity>
+		  usart_transmit_string("Lima encendido\n");
+ a5a:	83 e3       	ldi	r24, 0x33	; 51
+ a5c:	92 e0       	ldi	r25, 0x02	; 2
+ a5e:	0e 94 08 04 	call	0x810	; 0x810 <usart_transmit_string>
+		  SSD1306_SetPosition(0,10);
+ a62:	6a e0       	ldi	r22, 0x0A	; 10
+ a64:	80 e0       	ldi	r24, 0x00	; 0
+ a66:	0e 94 97 02 	call	0x52e	; 0x52e <SSD1306_SetPosition>
+		  SSD1306_ClearScreen();
+ a6a:	0e 94 39 02 	call	0x472	; 0x472 <SSD1306_ClearScreen>
+		  SSD1306_DrawString("COLOR LIMA",NORMAL);
+ a6e:	60 e0       	ldi	r22, 0x00	; 0
+ a70:	83 e4       	ldi	r24, 0x43	; 67
+ a72:	92 e0       	ldi	r25, 0x02	; 2
+ a74:	0e 94 64 03 	call	0x6c8	; 0x6c8 <SSD1306_DrawString>
+		  break;
+ a78:	08 95       	ret
+		 case 'o': // Comando para apagar el LED
+		 	set_red_intensity(255);
+ a7a:	8f ef       	ldi	r24, 0xFF	; 255
+ a7c:	0e 94 fa 03 	call	0x7f4	; 0x7f4 <set_red_intensity>
+		 	set_green_intensity(255);
+ a80:	8f ef       	ldi	r24, 0xFF	; 255
+ a82:	0e 94 fc 03 	call	0x7f8	; 0x7f8 <set_green_intensity>
+		 	set_blue_intensity(255);
+ a86:	8f ef       	ldi	r24, 0xFF	; 255
+ a88:	0e 94 fe 03 	call	0x7fc	; 0x7fc <set_blue_intensity>
+		 SSD1306_SetPosition(0,10);
+ a8c:	6a e0       	ldi	r22, 0x0A	; 10
+ a8e:	80 e0       	ldi	r24, 0x00	; 0
+ a90:	0e 94 97 02 	call	0x52e	; 0x52e <SSD1306_SetPosition>
+		 SSD1306_ClearScreen();
+ a94:	0e 94 39 02 	call	0x472	; 0x472 <SSD1306_ClearScreen>
+		 SSD1306_DrawString("SIN COLOR",NORMAL);
+ a98:	60 e0       	ldi	r22, 0x00	; 0
+ a9a:	8e e4       	ldi	r24, 0x4E	; 78
+ a9c:	92 e0       	ldi	r25, 0x02	; 2
+ a9e:	0e 94 64 03 	call	0x6c8	; 0x6c8 <SSD1306_DrawString>
+ aa2:	08 95       	ret
+
+00000aa4 <__vector_18>:
+#include "timers.h"
+
+//global variables
+volatile char usart_received_char;
+void process_command(char command);
+ISR (USART_RX_vect){
+ aa4:	1f 92       	push	r1
+ aa6:	0f 92       	push	r0
+ aa8:	0f b6       	in	r0, 0x3f	; 63
+ aaa:	0f 92       	push	r0
+ aac:	11 24       	eor	r1, r1
+ aae:	2f 93       	push	r18
+ ab0:	3f 93       	push	r19
+ ab2:	4f 93       	push	r20
+ ab4:	5f 93       	push	r21
+ ab6:	6f 93       	push	r22
+ ab8:	7f 93       	push	r23
+ aba:	8f 93       	push	r24
+ abc:	9f 93       	push	r25
+ abe:	af 93       	push	r26
+ ac0:	bf 93       	push	r27
+ ac2:	ef 93       	push	r30
+ ac4:	ff 93       	push	r31
+ usart_received_char=UDR0;
+ ac6:	80 91 c6 00 	lds	r24, 0x00C6	; 0x8000c6 <__TEXT_REGION_LENGTH__+0x7f80c6>
+ aca:	80 93 5d 02 	sts	0x025D, r24	; 0x80025d <usart_received_char>
+ process_command(usart_received_char);
+ ace:	80 91 5d 02 	lds	r24, 0x025D	; 0x80025d <usart_received_char>
+ ad2:	0e 94 37 04 	call	0x86e	; 0x86e <process_command>
+ ad6:	2f ef       	ldi	r18, 0xFF	; 255
+ ad8:	87 ea       	ldi	r24, 0xA7	; 167
+ ada:	91 e6       	ldi	r25, 0x61	; 97
+ adc:	21 50       	subi	r18, 0x01	; 1
+ ade:	80 40       	sbci	r24, 0x00	; 0
+ ae0:	90 40       	sbci	r25, 0x00	; 0
+ ae2:	e1 f7       	brne	.-8      	; 0xadc <__vector_18+0x38>
+ ae4:	00 c0       	rjmp	.+0      	; 0xae6 <__vector_18+0x42>
+ ae6:	00 00       	nop
+	_delay_ms(2000);
+ }
+ ae8:	ff 91       	pop	r31
+ aea:	ef 91       	pop	r30
+ aec:	bf 91       	pop	r27
+ aee:	af 91       	pop	r26
+ af0:	9f 91       	pop	r25
+ af2:	8f 91       	pop	r24
+ af4:	7f 91       	pop	r23
+ af6:	6f 91       	pop	r22
+ af8:	5f 91       	pop	r21
+ afa:	4f 91       	pop	r20
+ afc:	3f 91       	pop	r19
+ afe:	2f 91       	pop	r18
+ b00:	0f 90       	pop	r0
+ b02:	0f be       	out	0x3f, r0	; 63
+ b04:	0f 90       	pop	r0
+ b06:	1f 90       	pop	r1
+ b08:	18 95       	reti
+
+00000b0a <__tablejump2__>:
+ b0a:	ee 0f       	add	r30, r30
+ b0c:	ff 1f       	adc	r31, r31
+ b0e:	05 90       	lpm	r0, Z+
+ b10:	f4 91       	lpm	r31, Z
+ b12:	e0 2d       	mov	r30, r0
+ b14:	09 94       	ijmp
+
+00000b16 <_exit>:
+ b16:	f8 94       	cli
+
+00000b18 <__stop_program>:
+ b18:	ff cf       	rjmp	.-2      	; 0xb18 <__stop_program>
